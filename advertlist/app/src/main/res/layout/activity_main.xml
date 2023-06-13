@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/listing_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Listing Container -->
+        <LinearLayout
+            android:id="@+id/listing_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/article_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+
+    <!-- Listing Container -->
+        <LinearLayout
+            android:id="@+id/article_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_scrollview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:visibility="gone"
+        android:onClick="onBackButtonClick" />
+
+</RelativeLayout>
