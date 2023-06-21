@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="8dp">
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="8dp"
+    >
 
-    <TextView
-        android:id="@+id/paragraph_textview"
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
-
+        android:textAppearance="?android:textAppearanceMedium"
+    />
 </LinearLayout>
+
